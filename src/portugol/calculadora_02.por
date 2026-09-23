@@ -1,0 +1,20 @@
+programa{
+    funcao inicio(){
+        inteiro numTab, contador, termo
+
+        numTab = 0
+        termo = 0
+        contador = 1
+
+        escreva("Olá Jovem! Vamos tabular?\n")
+        escreva("Qual tabuada deseja ver?")
+        leia(numTab)
+
+        escreva("Tabuada do ", numTab, ":\n")
+        enquanto(contador <= 10){
+            termo = termo + numTab
+            escreva(contador, "\t x \t", numTab, " = ", termo, "\n")
+            contador = contador + 1
+        }
+    }
+}
